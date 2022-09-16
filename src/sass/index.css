@@ -1,0 +1,66 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+:root {
+  --accent-color:#F8D24E;
+  --main-bg-color: #84A178;
+  --main-text-color: #131313;
+  --main-light-color: #FCFCFC;
+  --address-text-color: #D6936D;
+  --product-first-color: #AEC6A5;
+  --product-first-additional-color:rgba(156, 190, 143, 0.7);
+  --product-second-color: #EFD478;
+  --product-second-additional-color: rgba(248, 210, 78, 0.7);
+  --product-third-color: #D6936D;
+  --product-third-additional-color: rgba(213, 117, 63, 0.7);
+  --product-char-color:#9CBE8F;
+  --input-bg-color:rgba(248, 210, 78, 0.1);
+  --white-color: #FFFFFF;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  color: var(--main-text-color);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}/*# sourceMappingURL=index.css.map */
