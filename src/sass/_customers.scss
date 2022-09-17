@@ -1,0 +1,56 @@
+@import "/node_modules/slick-carousel/slick/slick.scss";
+
+.customer-reviews {
+    margin-top: 80px;
+    background-color: #fff;
+    background-image: url('../images/block-4.png');
+}
+
+.carousel__img {
+    margin-bottom: 32px;
+}
+
+.carousel {
+    // padding: 0 50px 30px;
+    &__img {
+        margin: 0 auto;
+    }
+}
+
+.carousel__thumb {
+ margin: 32px 20px 30px 20px;
+}
+
+.carousel__text {
+padding: 34px 39px;
+display: block;
+font-family: 'Montserrat', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 2.58;
+text-align: center;
+color: #FCFCFC;
+background: #84A178;
+border-radius: 10px;
+}
+
+.carousel__name {
+display: block;
+
+font-family: 'Montserrat', sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 1.85;
+text-align: center;
+color: #131313;
+}
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    gap: 18px;
+   
+}
