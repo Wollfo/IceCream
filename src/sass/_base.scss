@@ -42,3 +42,8 @@ a {
   clip-path: inset(50%);
   margin: -1px;
 }
+.no-scroll {
+  @media screen and (max-width: 1199px) {
+    overflow: hidden;
+  }
+}
