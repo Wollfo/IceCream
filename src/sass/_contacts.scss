@@ -2,12 +2,12 @@
 }
 
 .container {
-  @extend %container
+  @extend %container;
 }
 
 .contacts__box {
-
-
+  width: 280px;
+  margin: auto;
 }
 
 .contacts__list {
@@ -19,25 +19,26 @@
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 20px;
-
-
 }
 
-.contacts__text{
+.contacts__text {
   padding: 40px 32px;
   font-style: normal;
+  height: 100%;
+  display: grid;
+  justify-items: start;
 }
 .contacts__category {
   display: inline-block;
   background: var(--accent-color);
   border-radius: 4px;
-  width: 80px;
+  padding: 0 20px;
   height: 16px;
-  margin-left: 32px;
-
+  //margin-bottom: 20px;
 }
-.contacts__place-on-the-map{
-
+.contacts__place-on-the-map {
+  border-bottom: 1px solid #e1e1e1;
+  margin-bottom: 24.01px;
 }
 .contacts__city {
   font-weight: 500;
@@ -45,6 +46,7 @@
   line-height: 186%;
   letter-spacing: 0.04em;
   color: var(--main-text-color);
+  margin-bottom: 8px;
 }
 
 .contacts__location {
@@ -53,6 +55,8 @@
   line-height: 183%;
   letter-spacing: 0.04em;
   color: var(--address-text-color);
+  padding: 20px 0;
+  cursor: pointer;
 }
 
 .contacts__working-mode {
@@ -60,13 +64,15 @@
   font-size: 12px;
   line-height: 186%;
   color: var(--main-text-color);
+  display: grid;
+  //margin-top: 24.01px;
 }
 
 .contacts__working-time {
   font-weight: 500;
   font-size: 12px;
   line-height: 186%;
-  color: #ABABAB;
+  color: #ababab;
 }
 
 .contacts__link {
@@ -76,9 +82,57 @@
   color: gold;
 }
 .contacts__tel {
+  padding-top: 24.01px;
   color: var(--main-text-color);
+  cursor: pointer;
 }
-.contacts__link {
+.contacts__mail {
   color: var(--main-text-color);
+  padding-bottom: 24.01px;
+  cursor: pointer;
+}
+.contacts__buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
 }
 
+.contacts__button {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  &:first-child{
+    margin-top: 28px;
+  }
+  &:last-child{
+    margin-top: 16px;
+  }
+}
+.contacts__svg {
+  fill-opacity: 0;
+  stroke: #131313;
+  margin-left: 6px;
+}
+
+.button {
+  border-radius: 10px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--main-text-color);
+  width: 196px;
+  height: 42px;
+  display: flex;
+
+  &__filled{
+    background: var(--accent-color);
+    border: none;
+  }
+  &__hollow{
+    border: 2px solid var(--accent-color);
+    background: none;
+  }
+}
