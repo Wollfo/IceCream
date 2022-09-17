@@ -1,4 +1,5 @@
 .contacts {
+
 }
 
 .container {
@@ -7,7 +8,19 @@
 
 .contacts__box {
   width: 280px;
+  height: auto;
   margin: auto;
+
+  @media screen and (min-width: 768px) {
+
+    height: 528px;
+    padding-left: 32px;
+    padding-right: 32px;
+    display: grid;
+    grid-template: repeat(2,100px) / repeat(3,200px);
+    justify-content: space-around;
+    width: 100%;
+  }
 }
 
 .contacts__list {
@@ -19,6 +32,10 @@
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+ margin-bottom: 0;
+  }
 }
 
 .contacts__text {
@@ -32,9 +49,13 @@
   display: inline-block;
   background: var(--accent-color);
   border-radius: 4px;
-  padding: 0 20px;
+  padding: 0 15px;
   height: 16px;
-  //margin-bottom: 20px;
+  font-size: 16px;
+
+  @media screen and (min-width: 768px) {
+
+  }
 }
 .contacts__place-on-the-map {
   border-bottom: 1px solid #e1e1e1;
@@ -47,6 +68,8 @@
   letter-spacing: 0.04em;
   color: var(--main-text-color);
   margin-bottom: 8px;
+
+
 }
 
 .contacts__location {
@@ -103,11 +126,18 @@
   align-items: center;
   text-align: center;
   justify-content: center;
+  cursor: pointer;
   &:first-child{
     margin-top: 28px;
   }
   &:last-child{
     margin-top: 16px;
+  }
+  @media screen and (min-width: 768px) {
+
+    &:first-child{
+      margin-top: 0;
+    }
   }
 }
 .contacts__svg {
@@ -116,23 +146,60 @@
   margin-left: 6px;
 }
 
-.button {
-  border-radius: 10px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 18px;
-  color: var(--main-text-color);
+.button__filled{
+  outline-color: transparent;
   width: 196px;
   height: 42px;
-  display: flex;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.28;
+  color: var(--main-text-color);
+  border-radius: 10px;
+  background-color: var(--accent-color);
+  border: 2px solid var(--accent-color);
 
-  &__filled{
-    background: var(--accent-color);
-    border: none;
+
+  &:hover {
+    background-color: var(--green-btn-color);
+    border: 2px solid var(--green-btn-color);
+
+
   }
-  &__hollow{
-    border: 2px solid var(--accent-color);
-    background: none;
+  &:focus {
+    background-color: var(--green-btn-color);
+    border: 2px solid var(--green-btn-color);
+    color: var(--main-light-color);
+    stroke: var(--main-light-color);
+
+  }
+  &:disabled {
+    background-color: var(--disabled-btn-color);
+    border: 2px solid var(--disabled-btn-color);
+  }
+}
+.button__hollow{
+  outline-color: transparent;
+  width: 196px;
+  height: 42px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.28;
+  color: var(--main-text-color);
+
+  border-radius: 10px;
+  background-color: transparent;
+  border: 2px solid var(--accent-color);
+
+  &:hover {
+    border-color: var(--green-btn-color);
+
+  }
+  &:focus {
+    border-color: var(--green-btn-color);
+    color: var(--main-light-color);
+
+  }
+  &:disabled {
+    border-color: var(--disabled-btn-color);
   }
 }
