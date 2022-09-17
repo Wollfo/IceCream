@@ -26,5 +26,8 @@
       <symbol id="menu-open" viewBox="0 0 32 32">
         <path d="M6.4 11.734v-2.134h19.2v2.134h-19.2zM6.4 17.066h19.2v-2.133h-19.2v2.133zM6.4 22.4h19.2v-2.134h-19.2v2.134z"></path>
       </symbol>
+      <symbol id="icon-Vector-1" viewBox="0 0 22 32">
+  <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M3.2 3.2l15.84 12.8-15.84 12.8"></path>
+</symbol>
   </defs>
 </svg>
