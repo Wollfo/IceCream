@@ -1,0 +1,97 @@
+.about-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.aboute-container {
+  @extend %container;
+  padding-left: 16px;
+  padding-right: 121px;
+}
+.aboute-label {
+  display: block;
+  margin-bottom: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 1.23;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: var(--main-light-color);
+}
+.aboute-title {
+  font-family: 'Seymour One', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--main-light-color);
+}
+.aboute-description_container {
+  display: block;
+  margin-left: auto;
+  margin-top: 266px;
+  margin-bottom: 242px;
+  width: 463px;
+}
+.aboute-description {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 176%;
+  letter-spacing: 0.04em;
+  color: var(--main-light-color);
+  margin-bottom: 8px;
+}
+.aboute-description:nth-child(3) {
+  margin-bottom: 48px;
+}
+.about-button {
+  @extend %button-read-more;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.about-button__label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.28;
+  color: var(--main-text-color);
+}
+.about-image {
+  width: 490px;
+  height: 490px;
+  background: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7),
+      rgba(248, 210, 78, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+  border-radius: 250px;
+  background-position: bottom;
+}
+.about-image-div {
+  width: 500px;
+  height: 500px;
+  background: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7),
+      rgba(248, 210, 78, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+  border-radius: 250px;
+
+  background-position: 35% 100%;
+}
