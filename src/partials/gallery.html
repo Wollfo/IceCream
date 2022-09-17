@@ -1,0 +1,38 @@
+<section class="top-bgr">
+  <h1 class="top-bgr__title visually-hidden">Main background</h1>
+</section>
+<section class="section-gallery">
+  <h1 class="section-gallery__title visually-hidden">Gallery</h1>
+  <div class="section-gallery__item">
+    <picture>
+      <source
+        srcset="
+          ./images/gallery-tablet@3x.jpg 3x,
+          ./images/gallery-tablet@2x.jpg 2x,
+          ./images/gallery-tablet@1x.jpg 1x
+        "
+        media="(min-width: 768px) and (max-width: 1199px)"
+      />
+      <source
+        srcset="
+          ./images/gallery-desktop@3x.jpg 3x,
+          ./images/gallery-desktop@2x.jpg 2x,
+          ./images/gallery-desktop@1x.jpg 1x
+        "
+        media="(min-width: 1200px)"
+      />
+      <img
+        class="section-gallery__icon"
+        srcset="
+          ./images/gallery-mobile@3x.jpg 3x,
+          ./images/gallery-mobile@2x.jpg 2x
+        "
+        src="./images/gallery-mobile@1x.jpg"
+        alt="Gallery of Ice #1"
+      />
+    </picture>
+  </div>
+</section>
+<section class="ice-bgr">
+  <h1 class="ice-bgr__title visually-hidden">Ice background</h1>
+</section>
