@@ -3,11 +3,17 @@
   padding-bottom: 42px;
   // padding-bottom: 60px;
   width: 100%;
-}
-.aboute-container {
-  @extend %container;
+  height: 100vh;
+  // border: 2px solid tomato;
   position: relative;
+  @extend %container;
 }
+// .aboute-container {
+//   @extend %container;
+//   position: relative;
+//   height: 100vh;
+//   border: 2px solid yellow;
+// }
 .aboute-label {
   display: block;
   margin-bottom: 12px;
@@ -79,8 +85,9 @@
     flex-direction: column;
     display: flex;
     justify-content: flex-end;
-    margin: 0 auto;
-    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    // margin-top: auto;
     // margin-bottom: 0;
     width: 220px;
     align-items: center;
@@ -146,52 +153,85 @@
   line-height: 1.28;
   color: var(--main-text-color);
 }
-.about-image-div {
+.about-image {
   position: absolute;
-  bottom: 0px;
-  left: 6px;
-  width: 279px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-30%, -30%);
-  @media screen and (min-width: 768px) {
-    // top: 154px;
-    // left: 18px;
-    width: 330px;
-    transform: translate(-130%, -50%);
-  }
-  @media screen and (min-width: 1200px) {
-    // display: inline-block;
-    top: 183px;
-    left: 0;
-    width: 490px;
-    transform: translate(10%, -10%);
-  }
-
-  // background-image: url(../images/cowdesktop@1x.jpg);
-
-  background-repeat: no-repeat;
-  border-radius: 250px;
-  background-image: center bottom;
-}
-
-.about-image-bgd {
-  // position: absolute;
-
-  width: 279px;
+  top: calc(25% + 11.32px);
+  top: 25%;
+  width: 278px;
+  height: 278px;
+  border-radius: 50%;
   background: linear-gradient(
       0deg,
       rgba(248, 210, 78, 0.7),
       rgba(248, 210, 78, 0.7)
     ),
     #d9d9d9;
-  box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
-  border-radius: 250px;
-  // background-position: center top;
-  @media screen and (min-width: 768px) {
-    width: 335px;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 500px;
-  }
+  box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+
+  //
 }
+.about-image::before {
+  position: absolute;
+  top: 10%;
+  // right: 0%;
+  display: block;
+  content: '';
+  width: 278px;
+  height: 278px;
+  background-image: url(../images/cowmobile@1x.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  transition: transform 300ms ease;
+}
+
+// .about-image-div {
+//   position: absolute;
+//   bottom: 0px;
+//   left: 6px;
+//   width: 279px;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -90%);
+//   @media screen and (min-width: 768px) {
+//     // top: 154px;
+//     // left: 18px;
+//     width: 335px;
+//     transform: translate(-110%, -30%);
+//   }
+//   @media screen and (min-width: 1200px) {
+//     // display: inline-block;
+//     top: 183px;
+//     left: 0;
+//     width: 490px;
+//     transform: translate(10%, 10%);
+//   }
+
+//   // background-image: url(../images/cowdesktop@1x.jpg);
+
+//   background-repeat: no-repeat;
+//   border-radius: 250px;
+//   background-image: center bottom;
+// }
+
+// .about-image-bgd {
+//   // position: absolute;
+
+//   width: 279px;
+//   background: linear-gradient(
+//       0deg,
+//       rgba(248, 210, 78, 0.7),
+//       rgba(248, 210, 78, 0.7)
+//     ),
+//     #d9d9d9;
+//   box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+//   border-radius: 250px;
+//   // background-position: center top;
+//   @media screen and (min-width: 768px) {
+//     width: 335px;
+//   }
+//   @media screen and (min-width: 1200px) {
+//     width: 500px;
+//   }
+// }
