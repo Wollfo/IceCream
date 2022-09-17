@@ -3,11 +3,40 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
+  background-image: url(/src/images/products-bcg-mobile.jpg);
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(/src/images/products-bcg-mobile@2x.jpg);
+  }
+
+  @media screen and (min-width: 480px) {
+    background-image: url(/src/images/products-bcg-tablet.jpg);
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (-o-min-device-pixel-ratio: 2/1),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(/src/images/products-bcg-tablet@2x.jpg);
+    }
+  }
+
   @media screen and (min-width: 768px) {
     padding-top: 61px;
     padding-right: 31px;
     padding-bottom: 82px;
     padding-left: 33px;
+
+    background-image: url(/src/images/products-bcg-desktop.jpg);
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (-o-min-device-pixel-ratio: 2/1),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(/src/images/products-bcg-desctop@2x.jpg);
+    }
   }
 
   @media screen and (min-width: 1200px) {
@@ -17,7 +46,6 @@
     padding-left: 13px;
   }
 }
-
 
 .products__pretitle {
   margin-bottom: 12px;
@@ -40,7 +68,6 @@
     line-height: 1.23;
   }
 }
-
 
 .products__title {
   margin-bottom: 148px;
@@ -68,7 +95,6 @@
     margin-bottom: 303px;
   }
 }
-
 
 .products__list {
   @media screen and (min-width: 768px) {
@@ -125,7 +151,6 @@
     padding-left: 63px;
   }
 }
-
 
 .products__name {
   margin-bottom: 40px;
@@ -307,10 +332,12 @@
   }
 }
 
-
 .products__name--ice-cream:hover::before,
 .products__name--coffee:hover::before,
-.products__name--milkshake:hover::before {
+.products__name--milkshake:hover::before,
+.products__name--ice-cream:focus::before,
+.products__name--coffee:focus::before,
+.products__name--milkshake:focus::before {
   transform: translateY(11.32px);
 }
 
@@ -371,7 +398,6 @@
   }
 }
 
-
 .button__product {
   position: absolute;
   bottom: 20px;
@@ -388,4 +414,28 @@
   @media screen and (min-width: 1200px) {
     bottom: 60px;
   }
+
+  &:hover {
+    .arrow__hover {
+      display: block;
+    }
+    .arrow {
+      display: none;
+    }
+  }
+
+  &:focus {
+    .arrow__focus {
+      display: block;
+    }
+    .arrow,
+    .arrow__hover {
+      display: none;
+    }
+  }
+}
+
+.arrow__hover,
+.arrow__focus {
+  display: none;
 }
