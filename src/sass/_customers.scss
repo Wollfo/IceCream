@@ -99,6 +99,10 @@
     width: 12px;
     height: 12px;
     font-size: 0;
+    &:hover, &:focus {
+      background-color: var(--main-bg-color);
+      transition: background-color 250ms linear;
+    }
   }
 }
 
