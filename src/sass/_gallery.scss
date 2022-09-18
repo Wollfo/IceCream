@@ -1,39 +1,28 @@
-// .top-bgr {
-//   background-color: var(--main-bg-color);
-//   height: 24px;
-
-//   @media screen and (min-width: 768px) {
-//     height: 164px;
-//   }
-
-//   @media screen and (min-width: 1200px) {
-//     height: 94px;
-//   }
-// }
-
 .section-gallery {
   @extend %container;
-  position: relative;
+  translate: 0 105px;
+  margin-top: -130px;
+
+  @media screen and (min-width: 768px) {
+    translate: 0 206px;
+    margin-top: -370px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    translate: 0 376px;
+    margin-top: -477px;
+  }
 
   &__slider {
-    position: absolute;
-    top: -24px;
     left: 50%;
-
     transform: translate(-50%, 0%);
-
-    @media screen and (min-width: 768px) {
-      top: -164px;
-    }
-
-    @media screen and (min-width: 1200px) {
-      top: -94px;
-    }
   }
 
   &__icon {
     border: transparent;
     border-radius: 12px;
+    margin-left: auto;
+    margin-right: auto;
 
     @media screen and (min-width: 768px) {
       border-radius: 18px;
@@ -43,48 +32,7 @@
       border-radius: 24px;
     }
   }
-
-  &__icon--first {
-    min-width: calc(100vw - 40px);
-
-    @media screen and (min-width: 768px) {
-      min-width: 704px;
-    }
-
-    @media screen and (min-width: 1200px) {
-      min-width: 1013px;
-    }
-  }
-
-  &__icon--next {
-    min-width: 175px;
-
-    @media screen and (min-width: 768px) {
-      max-width: 445px;
-    }
-
-    @media screen and (min-width: 1200px) {
-      max-width: 636px;
-    }
-  }
 }
-
-// .ice-bgr {
-//   height: 186px;
-//   background-image: url(../images/Ice-cream-bgr-mobile.jpg);
-//   background-repeat: repeat;
-//   background-size: cover;
-
-//   @media screen and (min-width: 768px) {
-//     height: 223px;
-//     background-image: url(../images/Ice-cream-bgr-tablet.jpg);
-//   }
-
-//   @media screen and (min-width: 1200px) {
-//     height: 456px;
-//     background-image: url(../images/Ice-cream-bgr-desktop.jpg);
-//   }
-// }
 
 /* Альтернативна розмітка без використання позишин-абсолют*/
 
