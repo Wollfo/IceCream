@@ -4,6 +4,7 @@ body {
   font-size: 14px;
   font-weight: normal;
   color: var(--main-text-color);
+  cursor: url("../images/cursor-min.png"), auto;
 }
 img {
   display: block;
@@ -41,4 +42,9 @@ a {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
+}
+.no-scroll {
+  @media screen and (max-width: 1199px) {
+    overflow: hidden;
+  }
 }

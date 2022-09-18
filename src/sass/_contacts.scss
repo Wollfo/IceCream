@@ -1,0 +1,251 @@
+.contacts {
+
+}
+
+.container {
+  @extend %container;
+}
+
+.contacts__box {
+  width: 280px;
+  height: auto;
+  margin: auto;
+
+  @media screen and (min-width: 768px) {
+    height: 576px;
+    display: grid;
+    grid-template: repeat(2, 100px) / repeat(3, 200px);
+    justify-content: space-around;
+    width: 100%;
+  }
+  @media screen and (min-width: 1200px) {
+    height: 580px;
+    grid-template: repeat(2, 100px) / repeat(3, 360px);
+
+  }
+}
+
+.contacts__list {
+  background: var(--main-light-color);
+  box-shadow: 0 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  width: 100%;
+  height: 412.1px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    width: 224px;
+    height: 528px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 368px;
+    height: 538px;
+  }
+}
+
+.contacts__text {
+  padding: 40px 32px;
+  font-style: normal;
+  height: 100%;
+
+  @media screen and (min-width: 768px) {
+    padding: 40px 24px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 40px 40px;
+  }
+}
+.contacts__category {
+  display: inline-block;
+  background: var(--accent-color);
+  border-radius: 4px;
+  padding: 0 15px;
+  height: 16px;
+  font-size: 16px;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    height: 28px;
+    padding: 5px 15px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 32px;
+  }
+}
+.contacts__place-on-the-map {
+  border-bottom: 1px solid #e1e1e1;
+
+  @media screen and (min-width: 768px) {
+    display: grid;
+    align-content: space-around;
+  }
+}
+.contacts__city {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  letter-spacing: 0.04em;
+  color: var(--main-text-color);
+  margin-bottom: 8px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
+}
+
+.contacts__location {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 183%;
+  letter-spacing: 0.04em;
+  color: var(--address-text-color);
+  margin-bottom: 24px;
+  cursor: pointer;
+  &:hover,
+  &:focus{
+    text-decoration: underline;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+}
+
+.contacts__working-mode {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  color: var(--main-text-color);
+  display: grid;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
+}
+
+.contacts__working-time {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  color: var(--disabled-btn-color);
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
+}
+.contacts__working-time1 {
+  margin-top: 24px;
+  margin-bottom: 8px;
+  @media screen and (min-width: 1200px) {
+    margin-top: 32px;
+    margin-bottom: 12px;
+  }
+}
+.contacts__working-time2 {
+  margin-bottom: 24px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 32px;
+  }
+}
+
+.contacts__link {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: gold;
+  display: grid;
+  //margin-top: 24px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+}
+.contacts__tel {
+  padding-top: 24px;
+  color: var(--main-text-color);
+  cursor: pointer;
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+  }
+}
+.contacts__mail {
+  color: var(--main-text-color);
+  padding-bottom: 24px;
+  cursor: pointer;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 32px;
+  }
+}
+.contacts__buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.contacts__button {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  cursor: pointer;
+
+  &:first-child {
+    margin-top: 28px;
+  }
+  &:last-child {
+    margin-top: 16px;
+  }
+  @media screen and (min-width: 768px) {
+    display: block;
+    &:first-child {
+      margin-top: 0;
+    }
+    &:last-child {
+      margin-top: 0;
+    }
+  }
+}
+.contacts__svg {
+  fill-opacity: 0;
+  stroke: var(--main-text-color);
+  margin-left: 6px;
+
+  .button__filled:focus & {
+    stroke: var(--main-light-color);
+  }
+  .button__hollow:focus & {
+    stroke: var(--main-light-color);
+  }
+}
+
+.button__filled {
+  @extend %button-location;
+}
+.button__hollow {
+  @extend %button-franchise;
+  @media screen and (min-width: 768px) {
+    margin-left: 16px;
+  }
+}
