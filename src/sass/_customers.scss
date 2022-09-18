@@ -9,11 +9,11 @@
 
     @media screen and (min-width: 768px) {
         padding-top: 60px;
-        padding-bottom: 80px;
+        padding-bottom: 290px;
     }
     @media screen and (min-width: 1200px) {
         padding-top: 123px;
-        padding-bottom: 100px;
+        padding-bottom: 350px;
 }
 }
 
@@ -42,6 +42,7 @@ font-style: normal;
 font-weight: 400;
 font-size: 12px;
 line-height: 2.58;
+letter-spacing: 0.04em;
 text-align: center;
 color: #FCFCFC;
 background: var(--main-bg-color);
