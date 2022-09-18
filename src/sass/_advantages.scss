@@ -1,4 +1,15 @@
 .advantages {
+  &_section {
+    padding-bottom: 60px;
+    @media screen and (min-width: 768px) {
+      padding-bottom: 204px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding-bottom: 180px;
+    }
+  }
+
   &_container {
     @extend %container;
   }
