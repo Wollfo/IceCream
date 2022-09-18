@@ -1,5 +1,4 @@
 .contacts {
-
 }
 
 .container {
@@ -12,12 +11,10 @@
   margin: auto;
 
   @media screen and (min-width: 768px) {
+    height: 576px;
 
-    height: 528px;
-    padding-left: 32px;
-    padding-right: 32px;
     display: grid;
-    grid-template: repeat(2,100px) / repeat(3,200px);
+    grid-template: repeat(2, 100px) / repeat(3, 200px);
     justify-content: space-around;
     width: 100%;
   }
@@ -34,7 +31,9 @@
   margin-bottom: 20px;
 
   @media screen and (min-width: 768px) {
- margin-bottom: 0;
+    margin-bottom: 0;
+    width: 224px;
+    height: 528px;
   }
 }
 
@@ -44,6 +43,9 @@
   height: 100%;
   display: grid;
   justify-items: start;
+  @media screen and (min-width: 768px) {
+    padding: 40px 24px;
+  }
 }
 .contacts__category {
   display: inline-block;
@@ -54,12 +56,20 @@
   font-size: 16px;
 
   @media screen and (min-width: 768px) {
-
+    height: 28px;
+    padding: 5px 15px;
   }
 }
 .contacts__place-on-the-map {
   border-bottom: 1px solid #e1e1e1;
   margin-bottom: 24.01px;
+  &:first-child {
+    margin-top: 24.01px;
+  }
+  @media screen and (min-width: 768px) {
+    display: grid;
+    align-content: space-around;
+  }
 }
 .contacts__city {
   font-weight: 500;
@@ -69,7 +79,9 @@
   color: var(--main-text-color);
   margin-bottom: 8px;
 
-
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
 }
 
 .contacts__location {
@@ -80,6 +92,10 @@
   color: var(--address-text-color);
   padding: 20px 0;
   cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
 }
 
 .contacts__working-mode {
@@ -88,7 +104,10 @@
   line-height: 186%;
   color: var(--main-text-color);
   display: grid;
-  //margin-top: 24.01px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
 }
 
 .contacts__working-time {
@@ -96,6 +115,10 @@
   font-size: 12px;
   line-height: 186%;
   color: #ababab;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
 }
 
 .contacts__link {
@@ -103,6 +126,10 @@
   font-size: 12px;
   line-height: 18px;
   color: gold;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
 }
 .contacts__tel {
   padding-top: 24.01px;
@@ -119,6 +146,10 @@
   flex-direction: column;
   align-items: center;
   margin: auto;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 .contacts__button {
@@ -127,79 +158,42 @@
   text-align: center;
   justify-content: center;
   cursor: pointer;
-  &:first-child{
+
+  &:first-child {
     margin-top: 28px;
   }
-  &:last-child{
+  &:last-child {
     margin-top: 16px;
   }
   @media screen and (min-width: 768px) {
-
-    &:first-child{
+    display: block;
+    &:first-child {
+      margin-top: 0;
+    }
+    &:last-child {
       margin-top: 0;
     }
   }
 }
 .contacts__svg {
   fill-opacity: 0;
-  stroke: #131313;
+  stroke: var(--main-text-color);
   margin-left: 6px;
-}
 
-.button__filled{
-  outline-color: transparent;
-  width: 196px;
-  height: 42px;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1.28;
-  color: var(--main-text-color);
-  border-radius: 10px;
-  background-color: var(--accent-color);
-  border: 2px solid var(--accent-color);
-
-
-  &:hover {
-    background-color: var(--green-btn-color);
-    border: 2px solid var(--green-btn-color);
-
-
-  }
-  &:focus {
-    background-color: var(--green-btn-color);
-    border: 2px solid var(--green-btn-color);
-    color: var(--main-light-color);
+  .button__filled:focus & {
     stroke: var(--main-light-color);
-
   }
-  &:disabled {
-    background-color: var(--disabled-btn-color);
-    border: 2px solid var(--disabled-btn-color);
+  .button__hollow:focus & {
+    stroke: var(--main-light-color);
   }
 }
-.button__hollow{
-  outline-color: transparent;
-  width: 196px;
-  height: 42px;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1.28;
-  color: var(--main-text-color);
 
-  border-radius: 10px;
-  background-color: transparent;
-  border: 2px solid var(--accent-color);
-
-  &:hover {
-    border-color: var(--green-btn-color);
-
-  }
-  &:focus {
-    border-color: var(--green-btn-color);
-    color: var(--main-light-color);
-
-  }
-  &:disabled {
-    border-color: var(--disabled-btn-color);
+.button__filled {
+  @extend %button-location;
+}
+.button__hollow {
+  @extend %button-franchise;
+  @media screen and (min-width: 768px) {
+    margin-left: 16px;
   }
 }
