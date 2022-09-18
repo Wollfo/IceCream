@@ -1,13 +1,16 @@
 .contacts {
 
-translate: 0 -355px;
+  translate: 0 -355px;
+  margin-bottom: -316px;
 
   @media screen and (min-width: 768px){
     translate: 0 -285px;
+    margin-bottom: -246px;
   }
 
   @media screen and (min-width: 1200px){
     translate: 0 -90px;
+    margin-bottom: 30px;
   }
 }
 
