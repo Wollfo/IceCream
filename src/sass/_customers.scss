@@ -1,19 +1,19 @@
 @import '/node_modules/slick-carousel/slick/slick.scss';
 
 .customer-reviews {
-    padding-top: 80px;
-    padding-bottom: 350px;
+    padding-top: 186px;
+    padding-bottom: 394px;
     background-color: var(--white-color);
     background-image: url('../images/ice-cream-bgr-desktop.jpg');
     background-size: cover;  
 
     @media screen and (min-width: 768px) {
-        padding-top: 60px;
-        padding-bottom: 290px;
+        padding-top: 223px;
+        padding-bottom: 383px;
     }
     @media screen and (min-width: 1200px) {
-        padding-top: 123px;
-        padding-bottom: 100px;
+        padding-top: 452px;
+        padding-bottom: 207px;
 }
 }
 
