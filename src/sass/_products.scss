@@ -1,5 +1,5 @@
 .products {
-  @extend %container;
+ 
   padding-top: 60px;
   padding-bottom: 60px;
 
@@ -44,8 +44,22 @@
     padding-right: 13px;
     padding-bottom: 66px;
     padding-left: 13px;
+
+    background-image: url(../images/products_bcg.jpg);
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (-o-min-device-pixel-ratio: 2/1),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/products_bcg@2x.jpg);
+    }
+  }
+  &__container {
+     @extend %container;
   }
 }
+
+
 
 .products__pretitle {
   margin-bottom: 12px;
@@ -419,16 +433,22 @@
   margin-left: auto;
   background-color: transparent;
   border: none;
-  height: 18px;
+
+  width: 150px;
+  height: 50px;
   padding: 0;
 
   @media screen and (min-width: 1200px) {
-    bottom: 60px;
+    bottom: 10px;
+    width: 250px;
+    height: 100px;
   }
 
   &:hover {
     .arrow__hover {
       display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
     .arrow {
       display: none;
@@ -438,6 +458,8 @@
   &:focus {
     .arrow__focus {
       display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
     .arrow,
     .arrow__hover {
