@@ -4,7 +4,7 @@ body {
   font-size: 14px;
   font-weight: normal;
   color: var(--main-text-color);
-  cursor: url("../images/cursor-min.png"), auto;
+  cursor: pointer;
 }
 img {
   display: block;
@@ -30,6 +30,7 @@ ul {
 
 a {
   text-decoration: none;
+  cursor: url('../images/cursor-min.png'), auto;
 }
 .visually-hidden {
   position: absolute;
@@ -47,4 +48,7 @@ a {
   @media screen and (max-width: 1199px) {
     overflow: hidden;
   }
+}
+button {
+  cursor: url('../images/cursor-min.png'), auto;
 }
