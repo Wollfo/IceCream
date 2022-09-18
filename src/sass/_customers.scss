@@ -78,7 +78,7 @@
   font-size: 20px;
   line-height: 1.85;
   text-align: center;
-  color: #131313;
+  color: var(--main-text-color);
   @media screen and (min-width: 1200px) {
     display: none;
   }
