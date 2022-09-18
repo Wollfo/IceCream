@@ -1,8 +1,8 @@
 .demo {
-    width: 1200px;
+    max-width: 1200px;
     height: 300px;
     text-align: center;
-    max-width: 480px;
+    // max-width: 480px;
     margin: 0 auto;
     padding-left: 30px;
     padding-bottom: 30px;
@@ -12,6 +12,8 @@
 .header-modal {
     @extend %button-buy-now;
 }
+
+// ==========HEADER-MODAL===========
 
 .backdrop {
     position: fixed;
@@ -36,17 +38,16 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 450px;
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    padding: 40px;
+    padding: 28px 28px;
 }
 
 .close-modal {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 8px;
+    right: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,21 +59,145 @@
     cursor: pointer;
 }
 
+.modal-header__title {
+    font-family: 'Seymour One';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
 .modal-header-form {
     display: flex;
     flex-direction: column;
 }
+
+.modal-assortment {
+    display: flex;
+    
+    justify-content: center;
+}
+
+.type-assortment {
+    display: inline-block;
+    width: 132px;
+    height: 135px;
+    border-radius: 15.7808px;
+    border: 2px solid;
+    cursor: pointer;
+}
+
+.modal-header-form__input {
+    background-color: var(--input-bg-color);
+    border: 1px solid var(--main-bg-color);
+    color: var(--main-text-color);
+    border-radius: 4px;
+    padding-left: 16px;
+    line-height: 140%;
+    width: 100%;
+    height: 32px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &::placeholder {
+        color: var(--main-text-color);
+    }
+    &:focus {
+        outline: none;
+        border-color: red;
+    }
+}
+
+.input-name {
+    margin-top: 24px;
+    }
+
+.input-phone {
+margin-top: 12px;
+}
+
+.modal-header-form__message {
+    background-color: var(--input-bg-color);
+    border: 1px solid var(--main-bg-color);
+    color: var(--main-text-color);
+    border-radius: 4px;
+    padding-left: 16px;
+    line-height: 140%;
+    width: 100%;
+    height: 64px;
+    resize: none;
+    margin-top: 12px;
+    
+    &::placeholder {
+        color: var(--main-text-color);
+    }
+    &:focus {
+        outline: none;
+    }
+} 
+
+.modal-header-form__submit {
+    width: 114px;
+    height: 42px;
+    border-radius: 10px;
+    background-color: var(--accent-color);
+    border: none;
+    padding: 0;
+    margin: 24 auto 0 auto;
+    cursor: pointer;
+}
+
 
 @media screen and (max-width: 479px){
     .modal-header {
         width: 96%;
     }
 }
+
 @media screen and (min-width: 480px) {
     .modal-header {
-        width: 96%;
+        width: 450px;
     }
 }
 
+@media screen and (min-width: 768px) {
+    .close-modal {
+        top: 20px;
+        right: 20px;
+    }
+    
+    .modal-header {
+        width: 568px;
+        height: 644px;
+        padding: 32px 54px;
+    }
+    
+    .modal-header-form {
+        margin: 0 auto;
+        width: 368px;
+    }
+    .modal-header-form__input {
+        width: 368px;
+        height: 42px;
+    }
 
+    .input-name {
+        margin-top: 40px;
+        }
+    
+
+    .input-phone {
+        margin-top: 16px;
+        }
+
+    .modal-header-form__message {
+        width: 368px;
+        height: 84px;
+        margin-top: 16px;
+    }
+
+    .modal-header-form__submit {
+        width: 121px;
+        height: 42px;
+        margin: 32 auto 0 auto;
+    }
+}
 

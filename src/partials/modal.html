@@ -8,16 +8,54 @@
                 </svg>
             </button>
             <p class="modal-header__title">Buy now</p>
-            <ul class="modal-header-list">
-                <li class="modal-header-list__item">ice cream</li>
-                <li class="modal-header-list__item">ice coffee</li>
-                <li class="modal-header-list__item">milkshake</li>
-            </ul>
             <form class="modal-header-form">
-                <input class="modal-header-form__input" type="text" placeholder="Name">
-                <input class="modal-header-form__input" type="text" placeholder="Phone">
-                <textarea class="modal-header-form__message" name="user-message" placeholder="Comment"></textarea>
-                <button type="submit" class="modal-header-form__submit">Submit</button>
+                <div class="modal-assortment">
+                    <input 
+                    type="checkbox"
+                    class="checkbox-ice-cream visually-hidde"
+                    name="ice-cream"
+                    required
+                    id="ice-cream">
+                    <label for="ice-cream" class="type-assortment">ice cream</label>
+                    
+                    <input 
+                    type="checkbox"
+                    class="checkbox-ice-coffee visually-hidde"
+                    name="ice-coffee"
+                    required
+                    id="ice-coffee">
+                    <label for="ice-coffee" class="type-assortment type-ice-coffee">ice coffee</label>
+
+                    <input 
+                    type="checkbox"
+                    class="checkbox-milkshake visually-hidde"
+                    name="checkbox-milkshake"
+                    required
+                    id="milkshake">
+                    <label for="milkshake" class="type-assortment">milkshake</label>
+                </div>
+                <div class="modal-order-form">
+                    <input 
+                        class="modal-header-form__input input-name" 
+                        type="text" 
+                        placeholder="Name" 
+                        name="user-name" 
+                        required
+                        pattern="^[a-zA-Zа-яА-ЯіІїЇ]+$"
+                        > 
+                    <input 
+                        type="tel" 
+                        class="modal-header-form__input input-phone" 
+                        placeholder="Phone" 
+                        name="user-phone" 
+                        required 
+                        pattern="[+380]{4}[0-9]{2}[0-9]{2}[0-9]{2}[0-9]{3}"
+                        title="+380xxxxxxxxx"
+                        >
+                    <textarea 
+                    class="modal-header-form__message" name="user-message" placeholder="Comment"></textarea>
+                    <button type="submit" class="modal-header-form__submit">Submit</button>
+                </div>
             </form>
         </div>
     </div>
