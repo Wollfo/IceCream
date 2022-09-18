@@ -32,18 +32,39 @@
   }
 
   &__icon {
-    // min-width: 279px;
     border: transparent;
     border-radius: 7px;
 
     @media screen and (min-width: 768px) {
-      min-width: 704px;
       border-radius: 18px;
     }
 
     @media screen and (min-width: 1200px) {
-      min-width: 1013px;
       border-radius: 24px;
+    }
+  }
+
+  &__icon--first {
+    min-width: 279px;
+
+    @media screen and (min-width: 768px) {
+      min-width: 704px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      min-width: 1013px;
+    }
+  }
+
+  &__icon--next {
+    min-width: 175px;
+
+    @media screen and (min-width: 768px) {
+      max-width: 445px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      max-width: 636px;
     }
   }
 }
