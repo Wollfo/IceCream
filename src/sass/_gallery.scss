@@ -1,21 +1,21 @@
-.top-bgr {
-  background-color: var(--main-bg-color);
-  height: 24px;
+// .top-bgr {
+//   background-color: var(--main-bg-color);
+//   height: 24px;
 
-  @media screen and (min-width: 768px) {
-    height: 164px;
-  }
+//   @media screen and (min-width: 768px) {
+//     height: 164px;
+//   }
 
-  @media screen and (min-width: 1200px) {
-    height: 94px;
-  }
-}
+//   @media screen and (min-width: 1200px) {
+//     height: 94px;
+//   }
+// }
 
 .section-gallery {
   @extend %container;
   position: relative;
 
-  &__item {
+  &__slider {
     position: absolute;
     top: -24px;
     left: 50%;
@@ -33,7 +33,7 @@
 
   &__icon {
     border: transparent;
-    border-radius: 7px;
+    border-radius: 12px;
 
     @media screen and (min-width: 768px) {
       border-radius: 18px;
@@ -45,7 +45,7 @@
   }
 
   &__icon--first {
-    min-width: 279px;
+    min-width: calc(100vw - 40px);
 
     @media screen and (min-width: 768px) {
       min-width: 704px;
@@ -69,19 +69,19 @@
   }
 }
 
-.ice-bgr {
-  height: 186px;
-  background-image: url(../images/Ice-cream-bgr-mobile.jpg);
-  background-repeat: repeat;
-  background-size: cover;
+// .ice-bgr {
+//   height: 186px;
+//   background-image: url(../images/Ice-cream-bgr-mobile.jpg);
+//   background-repeat: repeat;
+//   background-size: cover;
 
-  @media screen and (min-width: 768px) {
-    height: 223px;
-    background-image: url(../images/Ice-cream-bgr-tablet.jpg);
-  }
+//   @media screen and (min-width: 768px) {
+//     height: 223px;
+//     background-image: url(../images/Ice-cream-bgr-tablet.jpg);
+//   }
 
-  @media screen and (min-width: 1200px) {
-    height: 456px;
-    background-image: url(../images/Ice-cream-bgr-desktop.jpg);
-  }
-}
+//   @media screen and (min-width: 1200px) {
+//     height: 456px;
+//     background-image: url(../images/Ice-cream-bgr-desktop.jpg);
+//   }
+// }

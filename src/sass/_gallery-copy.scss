@@ -1,28 +1,33 @@
 .section-gallery {
-  // @extend %container;
-  background-image: url(../images/Ice-cream-bgr-mobile.jpg);
-  background-size: contain;
-  border-top: 24px solid var(--main-bg-color);
+  @extend %container;
 
-  @media screen and (min-width: 768px) {
-    background-image: url(../images/Ice-cream-bgr-tablet.jpg);
-    border-top: 164px solid var(--main-bg-color);
-  }
-
-  @media screen and (min-width: 1200px) {
-    background-image: url(../images/Ice-cream-bgr-desktop.jpg);
-    border-top: 101px solid var(--main-bg-color);
-  }
-
-  &__item {
+  &__slider {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
-    gap: 50px;
+
+    background-image: url(../images/ice-cream-bgr-mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top: 24px solid var(--main-bg-color);
+
+    @media screen and (min-width: 768px) {
+      background-image: url(../images/ice-cream-bgr-tablet.jpg);
+      border-top: 164px solid var(--main-bg-color);
+    }
+
+    @media screen and (min-width: 1200px) {
+      background-image: url(../images/ice-cream-bgr-desktop.jpg);
+      border-top: 101px solid var(--main-bg-color);
+    }
+  }
+
+  &__item {
   }
 
   &__icon {
+    min-width: 279px;
     border: transparent;
     border-radius: 7px;
     margin-top: -24px;
