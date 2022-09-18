@@ -1,19 +1,19 @@
 @import '/node_modules/slick-carousel/slick/slick.scss';
 
 .customer-reviews {
-  padding-top: 80px;
-  padding-bottom: 48px;
+  padding-top: 186px;
+  padding-bottom: 394px;
   background-color: var(--white-color);
-  background-image: url('../images/Ice-cream-bgr-desktop.jpg');
+  background-image: url('../images/ice-cream-bgr-desktop.jpg');
   background-size: cover;
 
   @media screen and (min-width: 768px) {
-    padding-top: 60px;
-    padding-bottom: 80px;
+    padding-top: 223px;
+    padding-bottom: 383px;
   }
   @media screen and (min-width: 1200px) {
-    padding-top: 123px;
-    padding-bottom: 100px;
+    padding-top: 452px;
+    padding-bottom: 207px;
   }
 }
 
@@ -42,7 +42,7 @@
   font-size: 12px;
   line-height: 2.58;
   text-align: center;
-  color: #fcfcfc;
+  color: var(--main-light-color);
   background: var(--main-bg-color);
   border-radius: 10px;
 
@@ -78,7 +78,7 @@
   font-size: 20px;
   line-height: 1.85;
   text-align: center;
-  color: #131313;
+  color: var(--main-text-color);
   @media screen and (min-width: 1200px) {
     display: none;
   }
@@ -95,7 +95,6 @@
     padding: 0;
     border: none;
     background-color: #d9d9d9;
-    cursor: pointer;
     border-radius: 50%;
     width: 12px;
     height: 12px;

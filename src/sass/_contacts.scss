@@ -1,12 +1,11 @@
 .contacts {
+  translate: 0 -355px;
 
-translate: 0 -355px;
-
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     translate: 0 -285px;
   }
 
-  @media screen and (min-width: 1200px){
+  @media screen and (min-width: 1200px) {
     translate: 0 -90px;
   }
 }
@@ -30,7 +29,6 @@ translate: 0 -355px;
   @media screen and (min-width: 1200px) {
     height: 580px;
     grid-template: repeat(2, 100px) / repeat(3, 360px);
-
   }
 }
 
@@ -116,9 +114,9 @@ translate: 0 -355px;
   letter-spacing: 0.04em;
   color: var(--address-text-color);
   margin-bottom: 24px;
-  cursor: pointer;
+  cursor: url('../images/cursor-min.png'), auto;
   &:hover,
-  &:focus{
+  &:focus {
     text-decoration: underline;
   }
 
@@ -137,7 +135,7 @@ translate: 0 -355px;
   line-height: 186%;
   color: var(--main-text-color);
   display: grid;
-
+  cursor: url('../images/cursor-min.png'), auto;
   @media screen and (min-width: 768px) {
     font-size: 14px;
   }
@@ -189,7 +187,7 @@ translate: 0 -355px;
 .contacts__tel {
   padding-top: 24px;
   color: var(--main-text-color);
-  cursor: pointer;
+
   @media screen and (min-width: 1200px) {
     padding-top: 32px;
   }
@@ -197,7 +195,7 @@ translate: 0 -355px;
 .contacts__mail {
   color: var(--main-text-color);
   padding-bottom: 24px;
-  cursor: pointer;
+
   @media screen and (min-width: 1200px) {
     padding-bottom: 32px;
   }
@@ -218,7 +216,7 @@ translate: 0 -355px;
   align-items: center;
   text-align: center;
   justify-content: center;
-  cursor: pointer;
+  cursor: url('../images/cursor-min.png'), auto;
 
   &:first-child {
     margin-top: 28px;
