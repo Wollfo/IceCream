@@ -26,7 +26,7 @@
     transform: translate(-50%, -50%);
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
+    border-radius: 10px;
     padding: 28px 28px;
 }
 
@@ -196,9 +196,13 @@ margin-top: 12px;
 } 
 
 .modal-header-form__submit {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
     width: 114px;
     height: 42px;
     border-radius: 10px;
+    color: var(--main-text-color);
     background-color: var(--accent-color);
     border: none;
     padding: 0;
@@ -288,7 +292,7 @@ margin-top: 12px;
     transform: translate(-50%, -50%);
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
+    border-radius: 10px;
     padding: 28px 20px 32px 20px;
 }
 
@@ -325,8 +329,8 @@ margin-top: 12px;
 .chololate-pic {
     display: block;
     position: relative;
-    width: 132px;
-    height: 138px;
+    width: 131px;
+    height: 131px;
     margin-top: 22px;
     border-radius: 50%;
     background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
@@ -502,6 +506,7 @@ margin-top: 12px;
     color: var(--main-text-color);
     border-radius: 10px;;
     padding-left: 16px;
+    padding-top: 11px;
     line-height: 140%;
     width: 100%;
     height: 84px;
@@ -521,9 +526,13 @@ margin-top: 12px;
     height: 42px;
     border-radius: 10px;
     background-color: var(--accent-color);
+    color: var(--main-text-color);
     border: none;
     padding: 0;
     margin: 32 auto 0 auto;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
 }
 
 @media screen and (max-width: 479px){
@@ -598,5 +607,109 @@ margin-top: 12px;
     .modal-products-form__submit {
         width: 121px;
         height: 42px;
+    }
+}
+
+// ================================================ABOUT-MODAL=============================================================
+
+.modal-about {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 28px 28px;
+}
+
+.close-modal-about {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+    cursor: pointer;
+}
+
+.modal-about__title {
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: var(--main-text-color);
+}
+
+
+.modal-about__video video,
+.modal-about__video iframe {
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.modal-about__video {
+    width: 100%;
+    height: 205px;
+    margin-top: 20px;
+}
+
+.modal-about__info {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: var(--main-text-color);
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 479px){
+    .modal-about {
+        width: 96%;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .modal-about {
+        width: 450px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .modal-about {
+        width: 568px;
+        padding: 32px 60px;
+    }
+    
+    .close-modal-about {
+        top: 20px;
+        right: 20px;
+    }
+
+    .modal-about__title {
+        width: 448px;
+        height: 28px;
+    }
+
+    .modal-about__video {
+        width: 448px;
+        height: 205px;
+        margin-top: 32px;
+    }
+
+    .modal-about__info {
+        width: 448px;
+        height: 88px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: var(--main-text-color);
+        margin-top: 32px;
     }
 }
