@@ -1,0 +1,83 @@
+.section-gallery {
+  @extend %container;
+  translate: 0 105px;
+  margin-top: -130px;
+
+  @media screen and (min-width: 768px) {
+    translate: 0 206px;
+    margin-top: -370px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    translate: 0 376px;
+    margin-top: -477px;
+  }
+
+  &__slider {
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+
+  &__icon {
+    border: transparent;
+    border-radius: 12px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: 768px) {
+      border-radius: 18px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      border-radius: 24px;
+    }
+  }
+}
+
+/* Альтернативна розмітка без використання позишин-абсолют*/
+
+// .section-gallery {
+//   @extend %container;
+
+//   &__slider {
+//     display: flex;
+//     flex-wrap: nowrap;
+//     align-items: center;
+//     justify-content: center;
+
+//     background-image: url(../images/ice-cream-bgr-mobile.jpg);
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     border-top: 24px solid var(--main-bg-color);
+
+//     @media screen and (min-width: 768px) {
+//       background-image: url(../images/ice-cream-bgr-tablet.jpg);
+//       border-top: 164px solid var(--main-bg-color);
+//     }
+
+//     @media screen and (min-width: 1200px) {
+//       background-image: url(../images/ice-cream-bgr-desktop.jpg);
+//       border-top: 101px solid var(--main-bg-color);
+//     }
+//   }
+
+//   &__item {
+//   }
+
+//   &__icon {
+//     min-width: 279px;
+//     border: transparent;
+//     border-radius: 7px;
+//     margin-top: -24px;
+
+//     @media screen and (min-width: 768px) {
+//       border-radius: 18px;
+//       margin-top: -164px;
+//     }
+
+//     @media screen and (min-width: 1200px) {
+//       border-radius: 24px;
+//       margin-top: -101px;
+//     }
+//   }
+// }

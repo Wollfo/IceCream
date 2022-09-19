@@ -105,7 +105,7 @@
   font-weight: 600;
   line-height: 1.28;
   color: var(--main-text-color);
-
+  cursor: url('../images/cursor-min.png'), auto;
   border-radius: 10px;
   background-color: var(--accent-color);
   border: 2px solid var(--accent-color);
@@ -132,7 +132,7 @@
   font-weight: 600;
   line-height: 1.28;
   color: var(--main-text-color);
-
+  cursor: url('../images/cursor-min.png'), auto;
   border-radius: 10px;
   background-color: transparent;
   border: 2px solid var(--accent-color);
@@ -168,7 +168,6 @@
   &:focus {
     background-color: var(--green-btn-color);
     border: 2px solid var(--green-btn-color);
-
   }
   &:disabled {
     background-color: var(--disabled-btn-color);
