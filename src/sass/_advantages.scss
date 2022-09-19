@@ -50,6 +50,7 @@
       background-color: var(--accent-color);
       background-position: 50% 50%;
       background-repeat: no-repeat;
+      background-size: 36px;
       margin-bottom: 16px;
 
       @media screen and (min-width: 768px) {
@@ -63,12 +64,33 @@
 
     &-cow::before {
       background-image: url(..//images/advantages_img/cow.png);
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (-webkit-min-device-pixel-ratio: 2),
+        screen and (-o-min-device-pixel-ratio: 2/1),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url(..//images/advantages_img/cow@2x.png);
+      }
     }
     &-weight::before {
       background-image: url(..//images/advantages_img/weight.png);
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (-webkit-min-device-pixel-ratio: 2),
+        screen and (-o-min-device-pixel-ratio: 2/1),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url(..//images/advantages_img/weight@2x.png);
+      }
     }
     &-ice-crema::before {
       background-image: url(..//images/advantages_img/ice-crema.png);
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (-webkit-min-device-pixel-ratio: 2),
+        screen and (-o-min-device-pixel-ratio: 2/1),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url(..//images/advantages_img/ice-crema@2x.png);
+      }
     }
   }
   &_numbers {
