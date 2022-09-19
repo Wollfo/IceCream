@@ -1,5 +1,5 @@
 
-// ==========HEADER-MODAL===========
+// ==============================================================HEADER-MODAL==============================================================
 
 .backdrop {
     position: fixed;
@@ -180,6 +180,7 @@ margin-top: 12px;
     color: var(--main-text-color);
     border-radius: 10px;;
     padding-left: 16px;
+    padding-top: 11px;
     line-height: 140%;
     width: 100%;
     height: 64px;
@@ -202,7 +203,6 @@ margin-top: 12px;
     border: none;
     padding: 0;
     margin: 24 auto 0 auto;
-    cursor: pointer;
 }
 
 
@@ -277,3 +277,326 @@ margin-top: 12px;
     }
 }
 
+
+// ================================================PRODUCTS-MODAL=============================================================
+
+
+.modal-products {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 28px 20px 32px 20px;
+}
+
+.close-modal-products {
+    position: absolute;
+    top: 28px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+    cursor: pointer;
+}
+
+.chololate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chololate-title {
+    font-family: 'Seymour One';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.4;
+    width: 142px;
+}
+
+
+.chololate-pic {
+    display: block;
+    position: relative;
+    width: 132px;
+    height: 138px;
+    margin-top: 22px;
+    border-radius: 50%;
+    background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+    box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+    
+    &::before {
+        position: absolute;
+        top: -7px;
+        width: 131px;
+        height: 131px;
+        display: block;
+        border-radius: 50%;
+        content: "";
+        background-image: url(../images/modal-4-mobile@1x.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (-webkit-min-device-pixel-ratio: 2),
+        screen and (-o-min-device-pixel-ratio: 2/1),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url(../images/modal-4-mobile@2x.png);
+        }
+    }
+}
+    @media screen and (min-width: 768px) {
+        .chololate-pic {
+            background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+            box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+        
+            &::before {
+            background-image: url(../images/modal-4-desktop@1x.png);
+
+            @media screen and (min-device-pixel-ratio: 2),
+            screen and (-webkit-min-device-pixel-ratio: 2),
+            screen and (-o-min-device-pixel-ratio: 2/1),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+            background-image: url(../images/modal-4-desktop@2x.png);
+            }
+        }    
+    }
+    }
+
+
+.chololate-about__list {
+    display: flex;
+    margin-top: 24px;
+}
+
+
+.chololate-about__item {
+    width: 53px;
+    height: 72px;
+    border: 2px solid var(--product-char-color);
+    border-radius: 40px;
+
+    &:not(:last-child) {
+        margin-right: 8px;
+    }
+}
+
+.chololate-about__wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 43px;
+    height: 43px;
+    background: var(--product-char-color);
+    border: 2px solid var(--product-char-color);
+    box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+    border-radius: 50%;
+}
+
+.chololate-about__amount {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 2.8;
+    color: var(--main-text-color)
+}
+
+.chololate-about__main-info {
+    text-align: center;
+    margin-top: 5px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.2;
+    color: var(--main-text-color)
+}
+
+.ingredients {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 39px;
+}
+
+.ingredients-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.4;
+    color: var(--main-text-color);
+}
+
+.ingredients-table {
+    margin-top: 24px;
+    width: 100%;
+}
+
+.modal-table-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ingredients-table-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 11px;
+}
+
+.ingredient-table-name {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 176%;
+    color: var(--main-text-color);
+}
+
+.ingredient-table-amount {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 176%;
+    letter-spacing: 0.04em;
+    color: var(--main-text-color);
+}
+
+.modal-products-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 48px;
+}
+
+.modal-products-form__input {
+    background-color: var(--input-bg-color);
+    border: 1px solid var(--main-bg-color);
+    color: var(--main-text-color);
+    border-radius: 10px;
+    padding-left: 16px;
+    line-height: 140%;
+    width: 100%;
+    height: 42px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &::placeholder {
+        color: var(--main-text-color);
+    }
+    &:focus {
+        outline: none;
+        border-color: red;
+    }
+}
+
+.form-tel {
+    margin-top: 16px;
+}
+
+.modal-products-form__message {
+    background-color: var(--input-bg-color);
+    border: 1px solid var(--main-bg-color);
+    color: var(--main-text-color);
+    border-radius: 10px;;
+    padding-left: 16px;
+    line-height: 140%;
+    width: 100%;
+    height: 84px;
+    resize: none;
+    margin-top: 16px;
+    
+    &::placeholder {
+        color: var(--main-text-color);
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+.modal-products-form__submit {
+    width: 132px;
+    height: 42px;
+    border-radius: 10px;
+    background-color: var(--accent-color);
+    border: none;
+    padding: 0;
+    margin: 32 auto 0 auto;
+}
+
+@media screen and (max-width: 479px){
+    .modal-products {
+        width: 96%;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .modal-products {
+        width: 450px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .close-modal-products {
+        top: 20px;
+        right: 20px;
+    }
+
+    .chololate-title {
+        text-align: center;
+        width: 100%;
+    }
+
+    .chololate-about__item {
+        width: 65px;
+        height: 90px;
+
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+
+    .chololate-about__wrap {
+        width: 53px;
+        height: 53px;
+    }
+
+    .chololate-about__amount {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.66;
+    }
+
+    .chololate-about__main-info {
+        margin-top: 7px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.25;
+    }
+
+    .ingredients {
+        margin-top: 48px;
+    }
+
+    .modal-products {
+        width: 568px;
+        padding: 32px 40px 32px 40px;
+    }
+
+    .modal-products-form__input {
+        width: 368px;
+        height: 42px;
+    }
+
+    .modal-products-form__message {
+        width: 368px;
+        height: 84px;
+    }
+
+    .modal-products-form__submit {
+        width: 121px;
+        height: 42px;
+    }
+}
