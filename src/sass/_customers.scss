@@ -4,8 +4,8 @@
   padding-top: 186px;
   padding-bottom: 394px;
   background-color: var(--white-color);
-  background-image: url('../images/ice-cream-bgr-desktop.jpg');
   background-size: cover;
+  background-image: url('../images/ice-cream-bgr-desktop.jpg');
 
   @media screen and (min-width: 768px) {
     padding-top: 223px;
@@ -99,7 +99,8 @@
     width: 12px;
     height: 12px;
     font-size: 0;
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       background-color: var(--main-bg-color);
       transition: background-color 250ms linear;
     }
