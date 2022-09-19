@@ -1,0 +1,104 @@
+<!-- =========HEADER-MODAL=========== -->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal-header">
+            <button type="button" class="close-modal" data-modal-close>
+                <svg class="modal__close-icon" width="20" height="20">
+                    <use href="./images/icons.svg#menu-close"></use>
+                </svg>
+            </button>
+            <p class="modal-header__title">Buy now</p>
+            <form class="modal-header-form">
+                <div class="modal-assortment">
+                    <input 
+                    type="checkbox"
+                    class="checkbox-ice-cream visually-hidden"
+                    name="product"
+                    id="ice-cream"
+                    value="ice-cream">
+                    <label for="ice-cream" class="type-assortment type-ice-cream">
+                        <div class="modal-asortment-pic modal-asortment-ice-cream">
+                            <picture class="type-assortment__image">
+                                <source
+                                srcset="./images/modal-1-desktop@1x.png 1x, ./images/modal-1-desktop@2x.png 2x"
+                                type="image/png"
+                                media="(min-width: 1200px)">
+                                <source
+                                srcset="./images/modal-1-mobile@1x.png 1x, ./images/modal-1-mobile@2x.png 2x"
+                                type="image/png"
+                                media="(min-width: 480px)">
+                                <img src="./images/modal-1-mobile@2x.png" alt="ice-cream">
+                            </picture>
+                        </div>ice cream
+                    </label>
+                    
+                    <input 
+                    type="checkbox"
+                    class="checkbox-ice-coffee visually-hidden"
+                    name="product"
+                    id="ice-coffee"
+                    value="ice-coffee">
+                    <label for="ice-coffee" class="type-assortment type-ice-coffee">
+                        <div class="modal-asortment-pic modal-asortment-ice-coffee">
+                            <picture class="type-assortment__image">
+                                <source
+                                srcset="./images/modal-2-desktop@1x.png 1x, ./images/modal-2-desktop@2x.png 2x"
+                                type="image/png"
+                                media="(min-width: 1200px)">
+                                <source
+                                srcset="./images/modal-2-mobile@1x.png 1x, ./images/modal-2-mobile@2x.png 2x"
+                                type="image/png"
+                                media="(min-width: 480px)">
+                                <img src="./images/modal-2-mobile@2x.png" alt="ice-cream">
+                            </picture>
+                        </div>ice coffee
+                    </label>
+
+                    <input 
+                    type="checkbox"
+                    class="checkbox-milkshake visually-hidden"
+                    name="product"
+                    id="milkshake"
+                    value="milkshake">
+                    <label for="milkshake" class="type-assortment type-milkshake">
+                        <div class="modal-asortment-pic modal-asortment-milkshake">
+                            <picture class="type-assortment__image">
+                                <source
+                                srcset="./images/modal-3-desktop@1x.png 1x, ./images/modal-3-desktop@2x.png 2x"
+                                type="image/png"
+                                media="(min-width: 1200px)">
+                                <source
+                                srcset="./images/modal-3-desktop@1x.png 1x, ./images/modal-3-desktop@1x.png 1x"
+                                type="image/png"
+                                media="(min-width: 480px)">
+                                <img src="./images/modal-3-desktop@1x.png" alt="ice-cream">
+                            </picture>
+                        </div>milkshake
+                    </label>
+                </div>
+                <div class="modal-order-form">
+                    <input 
+                        class="modal-header-form__input input-name" 
+                        type="text" 
+                        placeholder="Name" 
+                        name="user-name" 
+                        required
+                        pattern="^[a-zA-Zа-яА-ЯіІїЇ]+$"
+                        > 
+                    <input 
+                        type="tel" 
+                        class="modal-header-form__input input-phone" 
+                        placeholder="Phone" 
+                        name="user-phone" 
+                        required 
+                        pattern="[+380]{4}[0-9]{2}[0-9]{2}[0-9]{2}[0-9]{3}"
+                        title="+380xxxxxxxxx"
+                        >
+                    <textarea 
+                    class="modal-header-form__message" name="user-message" placeholder="Comment"></textarea>
+                    <button type="submit" class="modal-header-form__submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
