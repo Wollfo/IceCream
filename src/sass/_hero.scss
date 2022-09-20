@@ -1,5 +1,6 @@
 .hero {
  height: 500px;
+ width: 100%;
  padding-top: 61px;
  background-image: url(../images/heroimage/dotsmobile@1x.png), url(../images/heroimage/heromobile@1x.png);
 
@@ -35,7 +36,7 @@
  }
 
  @media screen and (min-width: 1200px) {
-  height: 600px;
+  height: 610px;
   background-image: url(../images/heroimage/dotsdesktop@1x.png), url(../images/heroimage/herodesktop@1x.png);
   background-size: 1200px, 550px;
   background-position: center bottom, calc(275px + 50%) bottom;
@@ -136,10 +137,24 @@
 }
 
 .common__inner {
- display: inline-flex;
+ display: none;
  align-items: center;
  flex-direction: row;
- margin-top: 28px;
+ margin-top: 42px;
+
+ @media screen and (min-width: 768px) {
+  display: inline-flex;
+ }
+}
+
+.hero__image-left {
+ width: 152px;
+ height: 152px;
+
+ @media screen and (min-width: 1200px) {
+  width: 225px;
+  height: 225px;
+ }
 }
 
 .hero__text-inner {
@@ -147,11 +162,16 @@
 }
 
 .hero__text {
- width: 151px;
+ width: 180px;
  font-weight: 400;
  font-size: 12px;
  line-height: 1.41;
  color: var(--main-light-color);
+
+ @media screen and (min-width: 1200px) {
+  font-size: 14px;
+  width: 200px;
+ }
 }
 
 .hero__button-bottom {
