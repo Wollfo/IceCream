@@ -15,6 +15,21 @@
 
   (() => {
     const refs = {
+      openModalBtn: document.querySelector("[data-modal-open-mobile-menu]"),
+      closeModalBtn: document.querySelector("[data-modal-close-mobile-menu]"),
+      modal: document.querySelector("[data-modal-mobile-menu]"),
+    };
+  
+    refs.openModalBtn.addEventListener("click", toggleModal);
+    refs.closeModalBtn.addEventListener("click", toggleModal);
+  
+    function toggleModal() {
+      refs.modal.classList.toggle("is-hidden");
+    }
+  })();
+
+  (() => {
+    const refs = {
       openModalBtn: document.querySelector("[data-modal-open-products-1]"),
       closeModalBtn: document.querySelector("[data-modal-close-products-1]"),
       modal: document.querySelector("[data-modal-products-1]"),
