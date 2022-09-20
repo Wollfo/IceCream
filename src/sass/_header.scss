@@ -1,3 +1,7 @@
+.header__container {
+ position: relative;
+}
+
 // ***** Мобильное меню*****//
 .mobile-menu {
  display: flex;
@@ -13,7 +17,16 @@
 
  background-color: #85a279;
 
- transition: visibility 300ms cubic-bezier(0.4, 0, 0.2, 1), opacity 300ms cubic-bezier(0.4, 0, 0.2, 1);
+ // transition: visibility 300ms cubic-bezier(0.4, 0, 0.2, 1), opacity 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+ transition: visibility 580ms cubic-bezier(0.4, 0, 0.2, 1), transform 550ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-hidden {
+ transform: translateX(120%);
+ // opacity: 0;
+ visibility: hidden;
+ pointer-events: none;
 }
 
 .mobile__nav {
@@ -130,12 +143,6 @@
  &:focus > .header__icon {
   stroke: var(--main-light-color);
  }
-}
-
-.is-hidden {
- opacity: 0;
- visibility: hidden;
- pointer-events: none;
 }
 
 .header__icon {
