@@ -1,0 +1,112 @@
+.modal-about {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--main-light-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 28px 28px;
+    transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        border: 2px solid var(--accent-color);
+    }
+}
+
+.close-modal-about {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+}
+
+.modal-about__title {
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: var(--main-text-color);
+}
+
+
+.modal-about__video video,
+.modal-about__video iframe {
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.modal-about__video {
+    width: 100%;
+    height: 205px;
+    margin-top: 20px;
+}
+
+.modal-about__info {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: var(--main-text-color);
+    margin-top: 20px;
+}
+
+// @media screen and (max-height: 460px)  {
+//     .modal-about{
+        
+//     }
+// }
+
+@media screen and (max-width: 479px){
+    .modal-about {
+        width: 96%;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .modal-about {
+        width: 450px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .modal-about {
+        width: 568px;
+        padding: 32px 60px;
+    }
+    
+    .close-modal-about {
+        top: 20px;
+        right: 20px;
+    }
+
+    .modal-about__title {
+        width: 448px;
+        height: 28px;
+    }
+
+    .modal-about__video {
+        width: 448px;
+        height: 205px;
+        margin-top: 32px;
+    }
+
+    .modal-about__info {
+        width: 448px;
+        height: 88px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: var(--main-text-color);
+        margin-top: 32px;
+    }
+}
