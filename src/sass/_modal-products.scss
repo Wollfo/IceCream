@@ -5,12 +5,14 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #FFFFFF;
+    background: var(--main-light-color);
+    border: 2px solid var(--accent-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     padding: 28px 20px 32px 20px;
     max-height: 98%;
     overflow-y: auto;
+    
 }
 
 .close-modal-products {
@@ -25,7 +27,6 @@
     background-color: transparent;
     border: none;
     padding: 0px;
-    cursor: pointer;
 }
 
 .chololate {
