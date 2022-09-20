@@ -4,10 +4,15 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background: var(--main-light-color);
-    border: 2px solid var(--accent-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     padding: 28px 28px;
+    transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        border: 2px solid var(--accent-color);
+    }
 }
 
 .close-modal-about {
@@ -54,6 +59,12 @@
     color: var(--main-text-color);
     margin-top: 20px;
 }
+
+// @media screen and (max-height: 460px)  {
+//     .modal-about{
+        
+//     }
+// }
 
 @media screen and (max-width: 479px){
     .modal-about {
