@@ -28,7 +28,7 @@
     border-radius: 10px;
     padding: 28px 28px;
     max-height: 98%;
-    transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
@@ -110,6 +110,8 @@
     width: 132px;
     height: 138px;
     border-radius: 50%;
+    border-top: none;
+    border-top: none;
 }
 
 .type-assortment__image {
@@ -117,6 +119,7 @@
     position: absolute;
     top: -3px;
 }
+
 
 
 .modal-asortment-ice-cream {
