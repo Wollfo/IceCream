@@ -78,8 +78,7 @@
       transform: translateY(-3px);
   }
 }
-.social-networks {
-  @extend %list;
+.social-networks {  
   display: flex;    
   justify-content: flex-end;
   margin-bottom: 38px;
@@ -110,7 +109,7 @@
   align-items:center;
   justify-content: center;
   border-radius: 50%;
-  cursor: pointer;
+  cursor: url('../images/cursor-min.png'), auto;
 
   transition: color 250ms linear,
               width 250ms linear,
@@ -152,6 +151,7 @@
 .footer-contacts__link {
   text-decoration: none;
   color:#FCFCFC;
+  cursor: url('../images/cursor-min.png'), auto;
   transition: color 250ms linear;
   &:hover, &:focus {
       color:var(--accent-color);
