@@ -57,9 +57,9 @@
 }
 
 .contacts__text {
-  padding: 40px 32px;
+  padding: 40px 32px 0 32px;
   font-style: normal;
-  height: 100%;
+
 
   @media screen and (min-width: 768px) {
     padding: 40px 24px;
@@ -72,8 +72,8 @@
   display: inline-block;
   background: var(--accent-color);
   border-radius: 4px;
-  padding: 0 15px;
-  height: 16px;
+  padding: 1px 15px;
+  //height: 16px;
   font-size: 16px;
   margin-bottom: 20px;
 
@@ -87,11 +87,15 @@
 }
 .contacts__place-on-the-map {
   border-bottom: 1px solid #e1e1e1;
-
+padding-bottom: 24px;
   @media screen and (min-width: 768px) {
-    display: grid;
-    align-content: space-around;
+    //display: grid;
+    //align-content: space-around;
   }
+}
+
+.contacts__place-on-the-map-time   {
+  padding: 24px 0;
 }
 .contacts__city {
   font-weight: 500;
@@ -116,7 +120,7 @@
   line-height: 183%;
   letter-spacing: 0.04em;
   color: var(--address-text-color);
-  margin-bottom: 24px;
+  //margin-bottom: 24px;
   cursor: url('../images/cursor-min.png'), auto;
   &:hover,
   &:focus {
@@ -128,7 +132,7 @@
   }
   @media screen and (min-width: 1200px) {
     font-size: 16px;
-    margin-bottom: 32px;
+    //margin-bottom: 32px;
   }
 }
 
@@ -161,19 +165,19 @@
   }
 }
 .contacts__working-time1 {
-  margin-top: 24px;
+  //margin-top: 24px;
   margin-bottom: 8px;
   @media screen and (min-width: 1200px) {
-    margin-top: 32px;
+    //margin-top: 32px;
     margin-bottom: 12px;
   }
 }
-.contacts__working-time2 {
-  margin-bottom: 24px;
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 32px;
-  }
-}
+//.contacts__working-time2 {
+//  margin-bottom: 24px;
+//  @media screen and (min-width: 1200px) {
+//    margin-bottom: 32px;
+//  }
+//}
 
 .contacts__link {
   font-weight: 500;
@@ -190,6 +194,11 @@
 .contacts__tel {
   padding-top: 24px;
   color: var(--main-text-color);
+  transition: color .25s cubic-bezier(.4, 0, .2, 1);
+  &:hover,
+  &:focus{
+    color: var(--green-btn-color);
+  }
 
   @media screen and (min-width: 1200px) {
     padding-top: 32px;
@@ -197,7 +206,12 @@
 }
 .contacts__mail {
   color: var(--main-text-color);
-  padding-bottom: 24px;
+  padding-bottom: 40px;
+  transition: color .25s cubic-bezier(.4, 0, .2, 1);
+  &:hover,
+  &:focus{
+    color: var(--green-btn-color);
+  }
 
   @media screen and (min-width: 1200px) {
     padding-bottom: 32px;
@@ -252,6 +266,7 @@
 
 .button__filled {
   @extend %button-location;
+
 }
 .button__hollow {
   @extend %button-franchise;
