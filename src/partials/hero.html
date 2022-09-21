@@ -1,45 +1,66 @@
 <!-- *hero -->
 <section class="hero">
- <div class="container hero__container">
-  <h1 class="hero__title">ice cream made with <span class="word">passion</span></h1>
-  <a href="#products" class="button hero__button hero__button-left">Products</ф>
-  <a href="#about" class="button hero__button hero__button-right">How it’s made?</a>
+  <div class="container hero__container">
+    <h1 class="hero__title">
+      ice cream made with <span class="word">passion</span>
+    </h1>
+    <a href="#products" class="button hero__button hero__button-left"
+      >Products</a
+    >
+    <a href="#about" class="button hero__button hero__button-right"
+      >How it’s made?</a
+    >
 
-  <div class="numbers">
-   <div class="numbers__one">
-    <p class="numbers__data"><span id="target">16</span></p>
-    <p class="numbers__description">cafes</p>
-   </div>
-   <div class="numbers__two">
-    <p class="numbers__data"><span id="2">23</span></p>
-    <p class="numbers__description">food trucks</p>
-   </div>
+    <div class="numbers">
+      <div class="numbers__one">
+        <p class="numbers__data"><span id="target">16</span></p>
+        <p class="numbers__description">cafes</p>
+      </div>
+      <div class="numbers__two">
+        <p class="numbers__data"><span id="2">23</span></p>
+        <p class="numbers__description">food trucks</p>
+      </div>
+    </div>
+
+    <div class="common__inner">
+      <picture class="hero__image-left">
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ./images/heroimage/platedesktop@1x.png 1x,
+            ./images/heroimage/platedesktop@2x.png 2x
+          "
+        />
+
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/heroimage/platetab@1x.png 1x,
+            ./images/heroimage/platetab@2x.png 2x
+          "
+        />
+
+        <img src="./images/heroimage/platetab@1x.png" alt="ice cream" />
+      </picture>
+
+      <div class="hero__text-inner">
+        <p class="hero__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et
+        </p>
+
+        <a href="#gallery" class="hero__button-bottom">
+          <svg class="arrow" width="40" height="100%">
+            <use href="./images/icons.svg#icon-Frame-62"></use>
+          </svg>
+          <svg class="arrow__hover" width="50" height="100%">
+            <use href="./images/icons.svg#icon-Arrow-hover"></use>
+          </svg>
+          <svg class="arrow__focus" width="50" height="100%">
+            <use href="./images/icons.svg#icon-Arrow-focus"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
   </div>
-
-  <div class="common__inner">
-   <picture class="hero__image-left">
-    <source media="(min-width: 1200px)" srcset="./images/heroimage/platedesktop@1x.png 1x, ./images/heroimage/platedesktop@2x.png 2x" />
-
-    <source media="(min-width: 768px)" srcset="./images/heroimage/platetab@1x.png 1x, ./images/heroimage/platetab@2x.png 2x" />
-
-    <img src="./images/heroimage/platetab@1x.png" alt="ice cream" />
-   </picture>
-
-   <div class="hero__text-inner">
-    <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-
-    <a href="#gallery" class="hero__button-bottom" >
-     <svg class="arrow" width="40" height="100%">
-      <use href="./images/icons.svg#icon-Frame-62"></use>
-     </svg>
-     <svg class="arrow__hover" width="50" height="100%">
-      <use href="./images/icons.svg#icon-Arrow-hover"></use>
-     </svg>
-     <svg class="arrow__focus" width="50" height="100%">
-      <use href="./images/icons.svg#icon-Arrow-focus"></use>
-     </svg>
-    </a>
-   </div>
-  </div>
- </div>
 </section>

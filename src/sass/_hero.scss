@@ -76,7 +76,6 @@
   line-height: 1.26;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-
   color: var(--main-light-color);
 
   @media screen and (min-width: 768px) {
@@ -90,6 +89,10 @@
     font-size: 38px;
     line-height: 1.27;
   }
+}
+
+.placein {
+  transform: translateY(1%);
 }
 
 .word {
@@ -166,10 +169,26 @@
 .hero__image-left {
   width: 152px;
   height: 152px;
+  transform: scale(1.05);
+  animation: scale 3000ms infinite 1000ms;
 
   @media screen and (min-width: 1200px) {
     width: 225px;
     height: 225px;
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
   }
 }
 
@@ -234,6 +253,9 @@
 
 .numbers {
   display: none;
+
+  transition: visibility 580ms cubic-bezier(0.4, 0, 0.2, 1);
+
   @media screen and (min-width: 768px) {
     display: block;
   }
