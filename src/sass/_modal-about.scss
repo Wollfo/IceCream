@@ -7,11 +7,12 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     padding: 28px 28px;
-    transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
-
+    border: 2px solid transparent;
+    
     &:hover,
     &:focus {
-        border: 2px solid var(--accent-color);
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        border-color: var(--accent-color);
     }
 }
 
@@ -40,13 +41,13 @@
 }
 
 
-.modal-about__video video,
-.modal-about__video iframe {
+.modal-about__video-wrap video,
+.modal-about__video-wrap iframe {
     object-fit: cover;
     border-radius: 10px;
 }
 
-.modal-about__video {
+.modal-about__video-wrap {
     width: 100%;
     height: 205px;
     margin-top: 20px;
@@ -60,11 +61,11 @@
     margin-top: 20px;
 }
 
-// @media screen and (max-height: 460px)  {
-//     .modal-about{
-        
-//     }
-// }
+.modal-about__video {
+    width: 100%;
+    height: 100%;
+    border: 0px;
+}
 
 @media screen and (max-width: 479px){
     .modal-about {
@@ -94,12 +95,12 @@
         height: 28px;
     }
 
-    .modal-about__video {
+    .modal-about__video-wrap {
         width: 448px;
         height: 205px;
         margin-top: 32px;
     }
-
+    
     .modal-about__info {
         width: 448px;
         height: 88px;
