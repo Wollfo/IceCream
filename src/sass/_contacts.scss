@@ -194,10 +194,11 @@ padding-bottom: 24px;
 .contacts__tel {
   padding-top: 24px;
   color: var(--main-text-color);
-  transition: color .25s cubic-bezier(.4, 0, .2, 1);
+  transition: color .40s cubic-bezier(.4, 0, .2, 1), font-size .8000s cubic-bezier(.4, 0, .2, 1);
   &:hover,
   &:focus{
-    color: var(--green-btn-color);
+    color: var(--address-text-color);
+    font-size: 20px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -207,10 +208,11 @@ padding-bottom: 24px;
 .contacts__mail {
   color: var(--main-text-color);
   padding-bottom: 40px;
-  transition: color .25s cubic-bezier(.4, 0, .2, 1);
+  transition: color .40s cubic-bezier(.4, 0, .2, 1), font-size .8000s cubic-bezier(.4, 0, .2, 1);
   &:hover,
   &:focus{
-    color: var(--green-btn-color);
+    color: var(--address-text-color);
+    font-size: 17px;
   }
 
   @media screen and (min-width: 1200px) {

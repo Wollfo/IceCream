@@ -5,3 +5,4 @@ import './js/modal-products';
 import './js/modal-about';
 import './js/modal-franchise';
 import './js/modal-location';
+import './js/slider';
