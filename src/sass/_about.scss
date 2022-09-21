@@ -4,13 +4,8 @@
 
  width: 100%;
  height: auto;
-
- // border: 2px solid tomato;
-
- // @extend %container;  // padding-bottom: 60px;
 }
 .aboute-container {
- // position: relative;
  position: relative;
  width: 100%;
  height: auto;
@@ -131,8 +126,6 @@
   max-width: 463px;
   min-height: 257px;
   margin-bottom: 92px;
-  //   margin-left: 105px;
-  // }
  }
 }
 .aboute-description {
@@ -188,12 +181,9 @@
  }
 }
 .about-button {
- // display: block;
  @extend %button-read-more;
- // text-align: center;
  padding-top: 12px;
  padding-bottom: 12px;
- // margin: 0 auto;
  @media screen and (min-width: 768px) {
   display: block;
   margin-right: auto;
@@ -208,31 +198,27 @@
 }
 
 .about-image {
- // position: relative;
  position: absolute;
  @media screen and (min-width: 320px) and (max-width: 479px) {
-  top: calc(25% + 11.32px);
   width: 278px;
   height: 278px;
-  // top: 190px;
   top: 20%;
   left: 50%;
   right: 50%;
   transform: translate(-50%);
  }
  @media screen and (min-width: 480px) and (max-width: 767px) {
-  // top: 25%;
   width: 278px;
   height: 278px;
   top: 21%;
-  // left: calc(25% - 10px);
   right: 21%;
-  // transform: translate(25%);
  }
+
  border-radius: 50%;
  background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #d9d9d9;
  box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
  background-attachment: fixed;
+
  @media screen and (min-width: 768px) {
   top: calc(25% + 11.32px);
   top: 25%;
@@ -248,7 +234,7 @@
 .about-image::before {
  position: absolute;
  top: 10%;
- // right: 0%;
+
  display: block;
  content: '';
  width: 278px;
@@ -258,7 +244,9 @@
  background-repeat: no-repeat;
  background-position: center;
  border-radius: 50%;
+
  transition: transform 300ms ease;
+
  @media screen and (max-width: 479px) {
   background-image: url(../images/cowmobile@1x.jpg);
   @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -285,11 +273,13 @@
   height: 490px;
  }
 }
+.about-image:hover::before,
+.about-image:focus::before {
+ transform: translateY(-10%);
+}
 
 .about-icon {
  fill-opacity: 0;
  stroke: #131313;
  margin-left: 6px;
- // width: 12px;
- // height: 12px;
 }
