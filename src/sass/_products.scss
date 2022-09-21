@@ -446,7 +446,7 @@
   }
 
   &:hover {
-    .arrow__hover {
+    .arrow__hover--products {
       display: block;
       margin-left: auto;
       margin-right: auto;
@@ -457,19 +457,19 @@
   }
 
   &:focus {
-    .arrow__focus {
+    .arrow__focus--products {
       display: block;
       margin-left: auto;
       margin-right: auto;
     }
     .arrow__button,
-    .arrow__hover {
+    .arrow__hover--products {
       display: none;
     }
   }
 }
 
-.arrow__hover,
-.arrow__focus {
+.arrow__hover--products,
+.arrow__focus--products {
   display: none;
 }
