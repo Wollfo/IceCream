@@ -1,44 +1,17 @@
 (() => {
     const refs = {
-      openModalBtn: document.querySelector("[data-modal-open-products-1]"),
-      closeModalBtn: document.querySelector("[data-modal-close-products-1]"),
-      modal: document.querySelector("[data-modal-products-1]"),
+      openModalBtn: document.querySelectorAll("[data-modal-open-products]"),
+      closeModalBtn: document.querySelector("[data-modal-close-products]"),
+      modal: document.querySelector("[data-modal-products]"),
     };
   
-    refs.openModalBtn.addEventListener("click", toggleModal);
+    console.log(refs)
+    refs.openModalBtn.forEach(elem =>
+      elem.addEventListener('click', toggleModal) );
     refs.closeModalBtn.addEventListener("click", toggleModal);
   
     function toggleModal() {
-      refs.modal.classList.toggle("is-hidden");
-    }
-  })();
-
-  (() => {
-    const refs = {
-      openModalBtn: document.querySelector("[data-modal-open-products-2]"),
-      closeModalBtn: document.querySelector("[data-modal-close-products-2]"),
-      modal: document.querySelector("[data-modal-products-2]"),
-    };
-  
-    refs.openModalBtn.addEventListener("click", toggleModal);
-    refs.closeModalBtn.addEventListener("click", toggleModal);
-  
-    function toggleModal() {
-      refs.modal.classList.toggle("is-hidden");
-    }
-  })();
-
-  (() => {
-    const refs = {
-      openModalBtn: document.querySelector("[data-modal-open-products-3]"),
-      closeModalBtn: document.querySelector("[data-modal-close-products-3]"),
-      modal: document.querySelector("[data-modal-products-3]"),
-    };
-  
-    refs.openModalBtn.addEventListener("click", toggleModal);
-    refs.closeModalBtn.addEventListener("click", toggleModal);
-  
-    function toggleModal() {
+      document.body.classList.toggle("no-scroll");
       refs.modal.classList.toggle("is-hidden");
     }
   })();
