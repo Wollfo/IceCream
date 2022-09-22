@@ -1,5 +1,4 @@
 .hero {
-
   height: 565px;
   width: 100%;
   padding-top: 122px;
@@ -19,7 +18,6 @@
   }
 
   @media screen and (min-width: 480px) {
-
     height: 665px;
     background-size: contain, 70%;
     background-position: center bottom, 63% bottom;
@@ -32,7 +30,6 @@
   }
 
   @media screen and (min-width: 768px) {
-
     height: 465px;
 
     background-image: url(../images/heroimage/dotstab@1x.png),
@@ -173,7 +170,6 @@
 
   animation: animate-hero 10000ms infinite 5ms;
 
-
   @media screen and (min-width: 1200px) {
     width: 225px;
     height: 225px;
@@ -196,7 +192,6 @@
   100% {
     transform: rotate(0deg);
   }
-
 }
 
 .hero__text-inner {
@@ -268,8 +263,6 @@
     right: 25px;
     top: 0;
     text-align: right;
-    z-index: 333;
-
   }
 
   &__two {
@@ -277,8 +270,6 @@
     right: 25px;
     top: 100px;
     text-align: right;
-    z-index: 333;
-
   }
   &__data {
     font-weight: 900;
