@@ -48,6 +48,8 @@
 }
 
 .modal-about__video-wrap {
+    display: flex;
+    justify-content: center;
     width: 100%;
     height: 205px;
     margin-top: 20px;
