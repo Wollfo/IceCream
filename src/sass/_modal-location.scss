@@ -9,10 +9,11 @@
     background: var(--main-light-color);
     padding: 28px 28px;
     border: 2px solid transparent;
-    
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     &:hover,
     &:focus {
-        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        
         border-color: var(--accent-color);
     }
 }
@@ -29,6 +30,12 @@
     background-color: transparent;
     border: none;
     padding: 0px;
+
+    &:hover,
+    &:focus {
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        fill: var(--accent-color);
+    }
 }
 
 .modal-location__title {
@@ -70,6 +77,15 @@
     border: none;
     padding: 0;
     margin-top: 24;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: var(--green-btn-color);
+        color: var(--main-light-color);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
 }
 
 @media screen and (max-width: 479px){
